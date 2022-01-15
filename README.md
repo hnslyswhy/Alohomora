@@ -1,5 +1,3 @@
 # Alohomora
-## How to use
-### cd client
-### npm start
-### open your brower at localhost://3000
+### A 24-hours group project
+### Check the website prototype at  https://hnslyswhy.github.io/Alohomora/
