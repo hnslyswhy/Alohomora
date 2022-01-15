@@ -1,0 +1,93 @@
+@use "../../styles/partials/global.scss" as *;
+@use "../../styles/partials/typography.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+.hero {
+  &__wrapper {
+    background: linear-gradient(#32323250, #32323250),
+      url("../../assets/images/hero-2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+    // opacity: 0.8;
+  }
+  &__content {
+    position: absolute;
+    top: 40%;
+    font-size: 22px;
+    padding-left: 119px;
+  }
+  &__text {
+    color: white;
+    width: 70%;
+    padding-bottom: 16px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 63px;
+    display: flex;
+  }
+  &__btn {
+    border: none;
+    background-color: $primary-green;
+    font-size: 24px;
+    height: 60px;
+    width: 325px;
+    font-weight: bold;
+    border-radius: 20px;
+  }
+}
+
+.trending {
+  &__title {
+    text-align: center;
+    padding: 69px 0px 49px 0px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: $primary-green;
+  }
+  &__content {
+    padding: 16px;
+  }
+  &__scroll {
+    text-align: center;
+    padding: 16px;
+  }
+  &__image {
+    height: 30px;
+  }
+  &__logos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+  }
+  &__logo {
+    padding: 12px 6px;
+    border-radius: 4px;
+    height: 150px;
+  }
+  &__bs {
+    padding: 12px 6px;
+    border-radius: 4px;
+    height: 200px;
+  }
+  &__bc {
+    padding: 12px 6px;
+    border-radius: 4px;
+    height: 120px;
+  }
+  &__partner {
+    padding-top: 16px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: $primary-green;
+  }
+}

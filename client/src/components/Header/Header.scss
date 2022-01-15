@@ -1,0 +1,46 @@
+@use "../../styles/partials/global.scss" as *;
+@use "../../styles/partials/typography.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+.header {
+  padding: 0 3rem;
+  padding-top: 1rem;
+  @include flexbox(row, space-between, center);
+  width: 100%;
+  background-color: $primary-green;
+
+  &__logo {
+    color: $primary-white;
+    @include heading;
+  }
+
+  &__left-menu {
+    width: 40%;
+    @include flexbox(row, space-between, center);
+  }
+
+  &__profile {
+    height: 40px;
+    width: 40px;
+    color: $primary-white;
+  }
+
+  &__link {
+    color: $primary-white;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__explore,
+  &__about,
+  &__contact {
+    color: inherit;
+    padding-bottom: 1rem;
+    @include heading4;
+  }
+}
+
+.active {
+  border-bottom: 2px solid $primary-white;
+}

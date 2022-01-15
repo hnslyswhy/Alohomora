@@ -1,0 +1,15 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.about {
+  margin: 4rem;
+  color: $primary-green;
+  height: 73vh;
+
+  &__text {
+    padding: 0 4rem;
+    margin-top: 1rem;
+    @include body2;
+    line-height: 2;
+  }
+}

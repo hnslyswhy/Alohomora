@@ -1,0 +1,9 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.contact {
+  height: 73vh;
+  @include heading3;
+  margin: 4rem;
+  color: $primary-green;
+}

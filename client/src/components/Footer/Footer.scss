@@ -1,0 +1,23 @@
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+.footer {
+  width: 100%;
+
+  &__wrapper {
+    padding: 1.5rem 3rem;
+    background-color: $primary-green;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: grey;
+  }
+
+  &__item {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: $primary-white;
+  }
+}
